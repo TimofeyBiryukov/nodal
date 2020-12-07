@@ -2,10 +2,9 @@
 
 const colors = require('colors/safe');
 
-const DEFAULT_ADAPTER = 'postgres';
-const ADAPTERS = {
-  'postgres': './adapters/postgres.js',
-};
+const DEFAULT_ADAPTER = 'default';
+const ADAPTERS = require(__dirname + '/db/adapters');
+ADAPTERS.default = './adapters/postgres.js';
 
 class Database {
 
