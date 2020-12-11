@@ -18,8 +18,8 @@ class Bootstrapper {
   constructor() {
 
     this.cfg = Config.db.main;
-    this.rootCfg = Object.create(this.cfg);
-    this.rootCfg.database = 'postgres';
+    this.rootCfg = {...this.cfg};//Object.create(this.cfg);
+    // this.rootCfg.database = 'postgres';
 
   }
 
