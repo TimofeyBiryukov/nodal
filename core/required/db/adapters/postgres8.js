@@ -21,7 +21,11 @@ class PostgresAdapter extends NodalPostgresAdapter {
 
   close() {
 
-    this.pool.end();
+    if (this.pool) {
+      this.pool.end();
+    } else {
+      this.adapter.pool.end();
+    }
 
   }
 
