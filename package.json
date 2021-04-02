@@ -1,6 +1,6 @@
 {
   "name": "timofey-nodal",
-  "version": "0.15.5",
+  "version": "0.16.1",
   "description": "An API Server and Framework for node.js",
   "keywords": [
     "framework",
